@@ -11,9 +11,9 @@
 	<img src="pizza.jpg" alt="Image Missing" width="200" height="200">
 	<form name="myform" method="GET" ACTION="#">
 		<p>Name: </p>
-		<input type="text" placeholder="your name" name="myname" ></p>
+		<input type="text" placeholder="your name" name="myname" >
 		<p>Address: #### Street Name... </p>
-		<input type="text" placeholder="delivery address" name="address"></p>
+		<input type="text" placeholder="delivery address" name="address">
 		<p>Phone Number: 123-123-1234</p>
 		<input type="tel" placeholder="123-123-1234" name="phone" pattern='\d\d\d-\d\d\d-\d\d\d\d'>
 		<p><u>Pizza size</u></p>
@@ -34,7 +34,7 @@
 	</form>
 	<script type="text/javascript">
 		function validateForm(form){
-			var str=new String("Alert!\n");
+			var str=new String("");
 			if(validate(form.myname)==false){
 				str+="You must fill in your name.\n";
 			}
@@ -50,7 +50,11 @@
 			if(validateSize()==false){
 				str+="You must fill in your pizza's size.\n";
 			}
-			alert(str);
+			if(str=="")
+				alert("Success!");
+			else
+				alert(str);
+				
 		}
 		function validate(element){
 			if(element.value == ""||element.value == null){
@@ -59,7 +63,7 @@
 			return true;
 		} 
 		function validatePhone(element){
-			var reg = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
+			var reg = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;  
   			if(element.value.match(reg)||validate(element)==false){  
        			return true; 
        		}
