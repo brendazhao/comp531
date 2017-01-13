@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="qz25"> 
+	<title>Hello Pizza World</title>
+</head>
+
+<body>
+	<h1>Pizza Guys Order Form</h1>
+	<img src="pizza.jpg" alt="Image Missing" width="200" height="200">
+	<form name="myform" method="GET" ACTION="#">
+		<p>Name: </p>
+		<input type="text" placeholder="your name" name="myname" ></p>
+		<p>Address: #### Street Name... </p>
+		<input type="text" placeholder="delivery address" name="address"></p>
+		<p>Phone Number: 123-123-1234</p>
+		<input type="tel" placeholder="123-123-1234" name="phone" pattern='\d\d\d-\d\d\d-\d\d\d\d'>
+		<p><u>Pizza size</u></p>
+		<input type="radio" id="size1" name="size" value="Large">Large
+		<input type="radio" id="size2" name="size" value="Medium">Medium
+		<input type="radio" id="size3" name="size" value="Small">Small
+		<br>
+		<p><u>Pizza Topping</u></p>
+		<input type="checkbox" name="pizzaTopping" value="Sausage">Sausage
+		<input type="checkbox" name="pizzaTopping" value="Pepperoni">Pepperoni
+		<input type="checkbox" name="pizzaTopping" value="Olives">Olives
+		<input type="checkbox" name="pizzaTopping" value="Anchovies">Anchovies
+		<input type="checkbox" name="pizzaTopping" value="Onions">Onions
+		<br>
+		<br>
+		<input type="submit" value="Place Order" onclick="validateForm(document.myform)">
+		<input type="reset" value="Clear">
+	</form>
+	<script type="text/javascript">
+		function validateForm(form){
+			var str=new String("Alert!\n");
+			if(validate(form.myname)==false){
+				str+="You must fill in your name.\n";
+			}
+			if(validate(form.address)==false){
+				str+="You must fill in your address.\n";
+			}
+			if(validate(form.phone)==false){
+				str+="You must fill in your phone number.\n";
+			}
+			if(validatePhone(form.phone)==false){
+				str+="You should fill in your phone number in correct form.(xxx-xxx-xxxx)\n";
+			}
+			if(validateSize()==false){
+				str+="You must fill in your pizza's size.\n";
+			}
+			alert(str);
+		}
+		function validate(element){
+			if(element.value == ""||element.value == null){
+				return false;
+			}
+			return true;
+		} 
+		function validatePhone(element){
+			var reg = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
+  			if(element.value.match(reg)||validate(element)==false){  
+       			return true; 
+       		}
+       		return false;       
+		}
+		function validateSize(){
+			if(document.getElementById("size1").checked==false 
+				&& document.getElementById("size2").checked==false
+				&& document.getElementById("size3").checked==false){
+				return false;
+			}
+			return true;
+		}
+	</script>
+</body>
