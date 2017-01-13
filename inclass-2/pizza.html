@@ -65,9 +65,9 @@
 		function validatePhone(element){
 			var reg = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;  
   			if(element.value.match(reg)||validate(element)==false){  
-       			return true; 
-       		}
-       		return false;       
+       				return true; 
+       			}
+       			return false;       
 		}
 		function validateSize(){
 			if(document.getElementById("size1").checked==false 
