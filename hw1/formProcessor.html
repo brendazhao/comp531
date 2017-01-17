@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="qz25"> 
+	<title>HW1 Form Processor</title>
+</head>
+
+<body>
+	<table id="mytable">
+		
+	</table>
+	<script type="text/javascript">
+		window.onload = function(){
+			var data=location.search.substring(1).split("&");
+			for(row in data){
+				var cur=data[row].split("=");
+				if(cur[0]=="Email"){
+					document.getElementById("mytable").innerHTML += "<tr><th>" + cur[0] + "</th><td>" + decodeURIComponent(cur[1]) + "</td></tr>";
+				}
+				else if(cur[0]=="TimeStamp"){
+					var value = new Date(parseInt(cur[1]));
+					document.getElementById("mytable").innerHTML += "<tr><th>" + cur[0] + "</th><td>" + value + "</td></tr>";		
+				}
+				else{
+					document.getElementById("mytable").innerHTML += "<tr><th>" + cur[0] + "</th><td>" + cur[1] + "</td></tr>";
+				}
+			}
+		}
+	</script>
+</body>
