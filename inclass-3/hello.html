@@ -47,7 +47,8 @@
 			clearInterval(interval);
 		}
 		function resumeCount(){
-			setInterval(countDown,1000);
+			clearInterval(interval);
+			interval=setInterval(countDown,1000);
 		}
 		function clearText(){
 			document.getElementById("textcontent").value="";
