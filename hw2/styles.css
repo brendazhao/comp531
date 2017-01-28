@@ -1,0 +1,69 @@
+body{
+	background-color:rgb(200,200,189);		
+}
+h1{
+	text-align: center;
+	font-weight:bold;
+	font-family: Comic Sans MS;
+	font-size: 3em;
+}	
+img{
+	width: 200px;
+	height:200px;
+}
+.main {
+	text-align: center;
+	background-color:rgb(200,200,189);
+	width:90%;
+	height:80%;
+	margin:20px auto; 
+} 	
+.card1 {
+	width:50%;
+	border: 0.5em solid;
+	border-color: rgb(252,167,154);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color:rgb(249,205,183);
+	font-size: 1.2em;
+	font-family: Verdana;
+	margin: 20px auto;
+}	
+.card2 {
+	width:50%;
+	border: 0.5em solid;
+	border-color: rgb(249,205,183);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color:rgb(252,167,154);
+	font-size: 1.2em;
+	font-family: Verdana;
+	margin: 20px auto;
+}
+.card3 {
+	width:90%;
+	border: 0.5em solid;
+	border-color: rgb(252,167,154);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color: rgb(249,205,183);
+	font-size: 1.2em;
+	font-family: Verdana;
+	margin: 20px auto;
+}
+.alertmsg{
+	font-size: 1.0em;
+	font-family: Verdana;
+	font-weight:bold;
+	color: rgb(255,0,0);
+	margin: 20px auto;
+}
+#profileBtn,#mainBtn,#btn0,#btn1,#btn2,#btn3,#btn4,#submitBtn{
+	background: rgb(131,175,155);
+	border-radius: 0.5em;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+}
+#link{
+	text-align: center;
+}

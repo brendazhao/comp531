@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+	<title>Profile Page</title>
+	<meta name="author" content="qz25"> 
+	<meta name="keywords" content="HTML, JavaScript">
+    <meta name="description" content="Profile Page">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<h1>Profile Page</h1>
+<div id="link">
+	<a href="main.html"><input type="button" value="Back To Main Page" id="mainBtn"></a>
+</div>
+<div class="main">
+	<div class="card3">
+		Display Name: 
+		<input type="text" placeholder="your display name" id="Name" />
+		<span id="Namenow">QinlanZhao</span>	
+		<br/>
+		<span class="alertmsg" id="alertName"></span>	
+	</div>
+	<div class="card3">
+		Email Address: 
+		<input type="text" placeholder="xxx@xxx.xxx" id="Email" />
+		<span id="Emailnow">qz25@rice.edu</span>
+		<br/>
+		<span class="alertmsg" id="alertEmail"></span>	
+	</div>
+	<div class="card3">
+		Phone Number: 
+		<input type="text" placeholder="xxx-xxx-xxxx" id="Phone" />
+		<span id="Phonenow">346-310-3808</span>
+		<br/>
+		<span class="alertmsg" id="alertPhone"></span>	
+	</div>
+	<div class="card3">
+		Zipcode: 
+		<input type="text" placeholder="xxxxx" id="Zipcode" />
+		<span id="Zipcodenow">77030</span>
+		<br/>
+		<span class="alertmsg" id="alertZipcode"></span>	
+	</div>
+	<div class="card3">
+		Password: 
+		<input type="password" id="YourPassword" />
+		<br/>
+		<span class="alertmsg" id="alertPassword"></span>	
+	</div>
+	<div class="card3">
+		Password Confirmation:
+		<input type="password" id="PasswordConfirmation" />
+		<br/>
+		<span class="alertmsg" id="alertPasswordConfirmation"></span>	
+	</div>	
+	<input type="submit" value="Submit" id="submitBtn" onclick="validateInfo()" />
+</div>
+</body>
+<script type="text/javascript" src="profile.js"></script>
+</html>
