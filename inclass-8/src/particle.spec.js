@@ -8,11 +8,27 @@ describe('Particle Functionality', () => {
         expect(p).to.be.ok
         expect(p.missingAttribute).to.not.be.ok
         //   check position, velocity, acceleration, mass
-        //   these should all be numbers or arrays of numbers
         expect(p.position).to.be.ok
         expect(p.velocity).to.be.ok
         expect(p.acceleration).to.be.ok
         expect(p.mass).to.be.ok
+        //   these should all be numbers or arrays of numbers
+        expect(p.position).to.be.instanceof(Array)
+        expect(p.position).to.have.length.within(1,3)
+        expect(p.position[0]).to.be.a('number')
+        expect(p.position[1]).to.be.a('number')
+
+        expect(p.velocity).to.be.instanceof(Array)
+        expect(p.velocity).to.have.length.within(1,3)
+        expect(p.velocity[0]).to.be.a('number')
+        expect(p.velocity[1]).to.be.a('number')
+
+        expect(p.acceleration).to.be.instanceof(Array)
+        expect(p.acceleration).to.have.length.within(1,3)
+        expect(p.acceleration[0]).to.be.a('number')
+        expect(p.acceleration[1]).to.be.a('number')
+
+	expect(p.mass).to.be.a('number')
     })
 
     it('should update the position by the velocity', () => {
