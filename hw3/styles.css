@@ -1,0 +1,87 @@
+#pannel table { 
+	border-collapse: collapse; 
+} 
+#pannel table td { 
+	border: 1px solid #808080; 
+	width: 10px; 
+	height: 10px; 
+	font-size: 0; 
+	line-height: 0; 
+	overflow: hidden; 
+} 
+#pannel table .snake0 { 
+	background-color: green; 
+} 
+#pannel table .snake1 { 
+	background-color: red; 
+} 
+#pannel table .snake2 { 
+	background-color: black; 
+} 
+#pannel table .snake3 { 
+	background-color: rgb(69,137,148); 
+} 
+#pannel table .food1 { 
+	background-color: red; 
+} 
+#pannel table .food2 { 
+	background-color: black; 
+} 
+#pannel table .food3 { 
+	background-color: rgb(69,137,148); 
+} 
+h1{
+	text-align: center;
+	font-weight:bold;
+	font-family: Comic Sans MS;
+	font-size: 2em;
+}	
+#endgame,#scoreshow,#msg,#chose{
+	text-align: center;
+	font-weight:bold;
+	font-family: Comic Sans MS;
+	font-size: 1.0em;
+	color: rgb(255,0,0);
+}
+.main {
+	text-align: center;
+	background-color:rgb(200,200,189);
+	width:90%;
+	height:80%;
+	margin:20px auto; 
+} 
+.operate{
+	text-align: center;
+	background-color:rgb(200,200,189);
+	width:30%;
+	height:10%;
+	margin:20px auto; 
+}
+.card1 {
+	width:50%;
+	border: 0.5em solid;
+	border-color: rgb(252,167,154);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color:rgb(249,205,183);
+	font-size: 1.0em;
+	font-family: Verdana;
+	margin: 20px auto;
+}	
+.card2 {
+	width:50%;
+	border: 0.5em solid;
+	border-color: rgb(249,205,183);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color:rgb(252,167,154);
+	font-size: 1.0em;
+	font-family: Verdana;
+	margin: 20px auto;
+}
+#startBtn,#upBtn,#downBtn,#rightBtn,#leftBtn{
+	background: rgb(131,175,155);
+	border-radius: 0.5em;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Snake Game</title>
+    <meta name="author" content="qz25"> 
+    <meta name="keywords" content="HTML, JavaScript, CSS">
+    <meta name="description" content="Game Page">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+</head> 
+<body>
+    <table class="main">
+    <tr> 
+        <td class="card1">
+	     <p>If you eat...<br/>
+                a)<b>red one:</b> Get five points,become red and keep your size<br/>   
+                b)<b>black one:</b> Lose one point,become black and become longer(not one grid)<br/>
+                c)<b>blue one:</b> Neither lose nor get point, become blue and become longer<br/><br/>
+                Every food will disappear after a period of time.<br/>
+                The game will end if you eat yourself or reach the wall.<br/><br/>
+            </p>
+            <div id="pannel"></div>
+            <p id="chose">choose a size!</p>
+            <select id="selSize"> 
+                <option value="40">40*40</option> 
+                <option value="30">30*30</option> 
+                <option value="20">20*20</option> 
+            </select> 
+        </td> 
+        <td class="card2">
+            <h1>Snake Game</h1>         
+            <p>Your name: <input type="text" id="username"/>
+            <input type="button" id="startBtn" value="Start" /> 
+            <table class="operate">
+                <tr>
+                    <td></td>
+                    <td><input type="button" id="upBtn" value="UP" /> </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" id="leftBtn" value="LEFT"/> </td>
+                    <td></td>
+                    <td> <input type="button" id="rightBtn" value="RIGHT" /> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" id="downBtn" value="DOWN" /> </td>
+                    <td></td>
+                </tr>
+            </table>
+            CurrentOperate Times: <span id="operationtime"></span>
+	    <p id="hid">Your score is: </p><span id="score"></span>
+            <div id="res" style.visibility="hidden">
+                <span id="endgame"></span></br>
+                <span id="scoreshow"></span></br>
+                <span id="msg"></span>
+            </div>
+            Best Player Name: <span id="winnername"></span><br>
+            Best Score is: <span id="bestscore"></span><br>
+	    Operate Times: <span id="besttime"></span>
+        </td>
+    </tr>
+    <table>
+</body> 
+</html> 
