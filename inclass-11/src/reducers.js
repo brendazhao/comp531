@@ -34,7 +34,7 @@ const Reducer = (state =  {
 	    			}
 		case 'REMOVE_TODO':
 			state = {
-				nextId : state.nextId - 1, 
+				nextId : state.nextId, 
 				todoItems : state.todoItems.filter(({id,text,done}) => {return id != action.id} ) 
 	    					
 			}
