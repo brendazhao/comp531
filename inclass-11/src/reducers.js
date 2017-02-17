@@ -25,17 +25,16 @@ const Reducer = (state =  {
 }, action) => {
 	switch(action.type) {
 		case 'ADD_TODO':
-			state=	{
-					nextId : state.nextId + 1, 
-					todoItems : [
-							...state.todoItems, {id: state.nextId + 1, 
-												 text: action.text , 
-												 done: false},
-	    					]
+			state =	{
+				nextId : state.nextId + 1, 
+				todoItems : [
+					...state.todoItems, 
+					{id: state.nextId + 1, text: action.text , done: false},
+	    				    ]
 	    			}
 		case 'REMOVE_TODO':
-			state =  {
-				nextId : state.nextId, 
+			state = {
+				nextId : state.nextId - 1, 
 				todoItems : state.todoItems.filter(({id,text,done}) => {return id != action.id} ) 
 	    					
 			}
