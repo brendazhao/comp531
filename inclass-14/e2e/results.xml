@@ -1,0 +1,49 @@
+
+> starter@1.0.0 e2e:base E:\00000.rice\comp531\inclass-14\mocking
+> mocha --opts e2e/mocha.opts e2e/*.spec.js "--reporter" "xunit"
+
+<testsuite name="Mocha Tests" tests="0" failures="2" errors="2" skipped="-2" timestamp="Wed, 01 Mar 2017 05:10:29 GMT" time="5.937">
+<testcase classname="Test Dummy Server Example Page" name="&quot;before all&quot; hook: should log in" time="0"><failure>ECONNREFUSED connect ECONNREFUSED 127.0.0.1:22819
+Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:22819
+    at ClientRequest.&lt;anonymous&gt; (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\http\index.js:381:15)
+    at Socket.socketErrorListener (_http_client.js:310:9)
+    at emitErrorNT (net.js:1278:8)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+From: Task: WebDriver.navigate().to(http://localhost:8080/index.html)
+    at Driver.schedule (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\lib\webdriver.js:377:17)
+    at Navigation.to (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\lib\webdriver.js:1027:25)
+    at exports.go (E:/00000.rice/comp531/inclass-14/mocking/e2e/selenium.js:13:37)
+    at Context.&lt;anonymous&gt; (E:/00000.rice/comp531/inclass-14/mocking/e2e/login.spec.js:10:9)
+    at callFnAsync (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runnable.js:349:8)
+    at Hook.Runnable.run (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runnable.js:301:7)
+    at next (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runner.js:298:10)
+    at Immediate.&lt;anonymous&gt; (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runner.js:320:5)</failure></testcase>
+<testcase classname="Test Dummy Server Example Page" name="&quot;after all&quot; hook: should log out" time="0"><failure>ECONNREFUSED connect ECONNREFUSED 127.0.0.1:22819
+Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:22819
+    at ClientRequest.&lt;anonymous&gt; (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\http\index.js:381:15)
+    at Socket.socketErrorListener (_http_client.js:310:9)
+    at emitErrorNT (net.js:1278:8)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+From: Task: WebDriver.findElement(By(css selector, *[id=&quot;logout&quot;]))
+    at Driver.schedule (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\lib\webdriver.js:377:17)
+    at Driver.findElement (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\lib\webdriver.js:864:17)
+    at exports.findId (E:/00000.rice/comp531/inclass-14/mocking/e2e/selenium.js:11:31)
+    at Object.exports.logout (E:/00000.rice/comp531/inclass-14/mocking/e2e/common.js:21:15)
+    at Context.&lt;anonymous&gt; (E:/00000.rice/comp531/inclass-14/mocking/e2e/login.spec.js:52:16)
+    at callFnAsync (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runnable.js:349:8)
+    at Hook.Runnable.run (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runnable.js:301:7)
+    at next (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runner.js:298:10)
+    at Immediate.&lt;anonymous&gt; (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runner.js:320:5)
+From: Task: WebElement.click()
+    at Driver.schedule (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\lib\webdriver.js:377:17)
+    at WebElementPromise.schedule_ (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\lib\webdriver.js:1744:25)
+    at WebElementPromise.click (E:\00000.rice\comp531\inclass-14\mocking\node_modules\selenium-webdriver\lib\webdriver.js:1845:17)
+    at Object.exports.logout (E:/00000.rice/comp531/inclass-14/mocking/e2e/common.js:21:32)
+    at Context.&lt;anonymous&gt; (E:/00000.rice/comp531/inclass-14/mocking/e2e/login.spec.js:52:16)
+    at callFnAsync (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runnable.js:349:8)
+    at Hook.Runnable.run (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runnable.js:301:7)
+    at next (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runner.js:298:10)
+    at Immediate.&lt;anonymous&gt; (E:\00000.rice\comp531\inclass-14\mocking\node_modules\mocha\lib\runner.js:320:5)</failure></testcase>
+</testsuite>
