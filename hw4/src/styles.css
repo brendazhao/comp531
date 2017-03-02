@@ -1,0 +1,117 @@
+body{
+	background-color:rgb(200,200,189);		
+}
+h1{
+	text-align: center;
+	font-weight:bold;
+	font-family: Comic Sans MS;
+	font-size: 3em;
+}
+h2{
+	text-align: center;
+	font-weight:bold;
+	font-family: Comic Sans MS;
+	font-size: 2em;
+}
+h3{
+	text-align: center;
+	font-weight:bold;
+	font-family: Comic Sans MS;
+	font-size: 1em;
+}
+.note{
+	text-align: center;
+	font-weight:bold;
+	font-family: Comic Sans MS;
+	font-size: 1.5em;
+}			
+img{
+	width: 200px;
+	height:200px;
+}
+.main {
+	text-align: center;
+	background-color:rgb(200,200,189);
+	width:90%;
+	height:80%;
+	margin:20px auto; 
+} 	
+.card1 {
+	width:95%;
+	border: 0.5em solid;
+	border-color: rgb(249,205,183);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color:rgb(252,167,154);
+	font-size: 1.2em;
+	font-family: Verdana;
+	margin: 20px auto;
+}	
+.card2 {
+	width:70%;
+	border: 0.5em solid;
+	border-color: rgb(249,205,183);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color:rgb(252,167,154);
+	font-size: 1.2em;
+	font-family: Verdana;
+	margin: 20px auto;
+}
+.card3 {
+	width:90%;
+	border: 0.5em solid;
+	border-color: rgb(252,167,154);
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color: rgb(249,205,183);
+	font-size: 1.2em;
+	font-family: Verdana;
+	margin: 20px auto;
+}
+.up {
+	vertical-align:top;
+}
+img{
+	width: 200px;
+	height:200px;
+}
+.navbar{
+	width:100%;
+	border: 0.25em solid;
+	border-color: rgb(252,167,154);
+	border-radius: 1em 1em 1em 1em;
+	padding: 1em 0em 1em 0em;
+	background-color: rgb(249,205,183);
+	text-align: right;
+}
+.alertmsg{
+	font-size: 1.0em;
+	font-family: Verdana;
+	font-weight:bold;
+	color: rgb(255,0,0);
+	margin: 20px auto;
+}
+.btn{
+	background: rgb(131,175,155);
+	border-radius: 0.5em;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+}
+.inputmsg{
+	width:50%;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight:bold;
+	background-color:rgb(252,167,154);
+}
+.inputmsg2{
+	width:50%;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight:bold;
+	background-color:rgb(249,205,183);
+}
+#link{
+	text-align: center;
+}
