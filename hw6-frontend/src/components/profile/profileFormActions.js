@@ -1,0 +1,50 @@
+import React, { Component, PropTypes } from 'react'
+import { connect } from 'react-redux'
+import { resource } from '../../actions'
+//init the profile
+
+export const initProfile = () => {
+    return (dispatch) => {
+        const user = {
+            name: 'qz25'
+        }
+        const emailPromise = resource('GET', 'email')
+        .then((response) => user.email = response.email)
+        const zipcodePromise = resource('GET', 'zipcode')
+        .then((response) => user.zipcode = response.zipcode)
+        const dobPromise = resource('GET', 'dob')
+        .then((response) => user.dob = new Date(response.dob).toLocaleDateString())
+        const avatarPromise = resource('GET', 'avatars')
+        .then((response) => user.avatar = response.avatars[0].avatar)
+       Promise.all([emailPromise, zipcodePromise, dobPromise, avatarPromise]).then(() => {
+            dispatch({type: 'INIT_PROFILE', newuser: user})
+        })
+    }
+}
+//update the profile
+export const updateProfile = ({newuser}) => {
+    return (dispatch) => {
+        const emailPromise = resource('PUT', 'email', { email: newuser.email})
+        const zipcodePromise = resource('PUT', 'zipcode', { zipcode: newuser.zipcode})
+        const passwordPromise = resource('PUT', 'password', { password: newuser.password})
+     Promise.all([emailPromise, zipcodePromise, passwordPromise]).then(() => {
+            dispatch(initProfile())
+        })
+    }
+}
+
+export const updateImage = ({file})=>{
+    
+    return (dispatch) =>{
+        const fd = new FormData()
+        fd.append('image',file)
+        resource('PUT','avatar',fd,false)       
+        .then((response)=>{
+           dispatch({type:'UPDATE_AVATAR', avatar: response.avatar})
+        })
+        .catch(err=>{
+            console.log(file)
+            console.log(fd.get('image'))
+        })
+    }
+}
