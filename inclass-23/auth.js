@@ -20,7 +20,7 @@ passport.serializeUser(function(user, done) {
 //deserialize the user from the session
 passport.deserializeUser(function(id, done) {
 	var user = users[id]
-	done(null)
+	done(null,user)
 })
 
 passport.use(new FacebookStrategy(config,
@@ -101,12 +101,10 @@ const putPassword = (req,res) => {
     res.send(msg)
 }
 
-
-
 module.exports = app => {
-    app.post('/login', login)
+    app.post('/login', postLogin)
     app.put('/logout', putLogout)
-    app.post('/register', register)
+    app.post('/register', postRegister)
     app.put('/password',putPassword)
 
     app.use(session({secret:'thisIsMySecretMessage'}))
