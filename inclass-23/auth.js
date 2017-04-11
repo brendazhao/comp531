@@ -95,7 +95,7 @@ const putLogout = (req, res) => {
 }
 
 const putPassword = (req,res) => {
-	const msg = {username:'qw12', 
+	const msg = {username:'qz25', 
 	        	  status:'password will not change'
 	    }
     res.send(msg)
