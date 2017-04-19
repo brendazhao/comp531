@@ -1,0 +1,19 @@
+1.What did you hope to learn but did not? 
+I once thought AngularJS is popular and we may learn that in this class. 
+
+2.What did you really enjoy learning about? 
+I enjoy the homework3. It gives us chance to use js to the field we like.Also, reduce and redux is also fun.
+
+3.What worked well in the course? and how? 
+I think the inclass exercise is great. And we can also found the slides and mp3 on the piazza.
+How? The inclass exercise pushes me to learn more. And the slides and mp3 gives me a outline of learning path.
+
+4.What did not work well in the course and how might it be improved? 
+If it is possible to get the slides earlier? I found that the slides is only available about an hour before the class.
+Another thing is that may be it would be better if reduced the time of new tech intro.
+
+5.What could I have done to help you more, presentation of material, design of in class exercises, goals of projects – and be specific please! 
+Everything is fine!
+
+6.Anything else you like to say?
+Test Driven Programming is another thing I learned from this class! I think the workload is worth 3 credit! (even 4/5)
