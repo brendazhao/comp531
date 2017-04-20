@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/auth/login.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/components/auth/</a> login.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">48% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>8/20</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 branch</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component, PropTypes } from 'react'
+import {connect } from 'react-redux'
+import {login} from './authActions'
+//basic structure of the login module
+export const Login = <span class="fstat-no" title="function not covered" >({<span class="cstat-no" title="statement not covered" >errLogInfo,dispatch}) =&gt; {</span></span>
+    let <span class="cstat-no" title="statement not covered" >username;</span>
+    let <span class="cstat-no" title="statement not covered" >password;</span>
+    return(
+<span class="cstat-no" title="statement not covered" >    &lt;div&gt;</span>
+        &lt;h2&gt;Log In&lt;/h2&gt;
+        &lt;br/&gt;
+        &lt;div className="card3"&gt;
+            &lt;form&gt;
+            User Name: &amp;nbsp;&amp;nbsp;
+            &lt;input className="inputmsg" type="text" placeholder="your user name" 
+                ref={<span class="fstat-no" title="function not covered" >(node)=&gt;<span class="cstat-no" title="statement not covered" >username = node} id="Name" /&gt;</span></span>
+            &lt;br/&gt;&lt;br/&gt;
+            Password: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+            &lt;input className="inputmsg" type="password" 
+                ref={<span class="fstat-no" title="function not covered" >(node)=&gt;<span class="cstat-no" title="statement not covered" >password = node} id="YourPassword" /&gt;</span></span>
+            &lt;br/&gt;&lt;br/&gt;
+&nbsp;
+            &lt;input id="login" className="btn" type="submit" value="Login" 
+            onClick={<span class="fstat-no" title="function not covered" >(event) =&gt; {</span>
+                event.<span class="cstat-no" title="statement not covered" >preventDefault(),</span>
+                getInfo(username,password,dispatch)
+               }
+                }/&gt;
+            &lt;input className="btn" type="reset" value="Clear" /&gt;
+            
+           &lt;div className="alertmsg"&gt;{errLogInfo}&lt;/div&gt;
+            &lt;/form&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+)}
+&nbsp;
+//get the input info and save it in the state tree and turn to the main page
+const getInfo=<span class="fstat-no" title="function not covered" >(username,password,dispatch)=&gt;{ </span>
+    const <span class="cstat-no" title="statement not covered" >myPhone="123-456-7890"</span>
+    if(<span class="cstat-no" title="statement not covered" >username.value==''||password.value==''){</span>
+        dispatch(<span class="cstat-no" title="statement not covered" >{type: 'IS_LOG_ERROR', errLogInfo:'You cannot login without username or password!'})</span>
+     }
+    else{
+        const <span class="cstat-no" title="statement not covered" >user={</span>
+            name:username.value,
+            phone:myPhone,
+            password:password.value
+        }
+        dispatch(<span class="cstat-no" title="statement not covered" >login({user}))</span>
+&nbsp;
+    }
+}
+//check the type
+Login.propTypes = {
+    errLogInfo: PropTypes.string.isRequired,
+    user: PropTypes.object.isRequired,
+    dispatch: PropTypes.func.isRequired
+}
+export default connect(
+<span class="fstat-no" title="function not covered" >    (state) =&gt; {</span>
+        return <span class="cstat-no" title="statement not covered" >{</span>
+            errLogInfo: state.errLogInfo,
+            user: state.user
+        }
+    },null
+)(Login)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 24 2017 21:48:13 GMT-0500 (CDT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{ 
+     "netid": "qz25",
+  "frontend": "https://hw7qz25fronted.surge.sh",
+  "backend": "https://hw7qz25.herokuapp.com"
+}
