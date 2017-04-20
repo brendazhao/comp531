@@ -1,0 +1,11 @@
+
+> stub@1.0.0 test /Users/qinlan/Documents/comp531/hw6-backend
+> mocha --opts mocha.opts ./src/*.spec.js "--reporter" "xunit" "bash:" "xunit/results.xml"
+
+<testsuite name="Mocha Tests" tests="5" failures="0" errors="0" skipped="0" timestamp="Thu, 06 Apr 2017 01:35:21 GMT" time="0.085">
+<testcase classname="Validate POST /article" name="should GET articles" time="0.04"/>
+<testcase classname="Validate POST /article" name="should POST a new articles" time="0.031"/>
+<testcase classname="Validate POST /article" name="should GET articles with length + 1" time="0.003"/>
+<testcase classname="validate PUT /headline" name="should GET headline for sampleUser" time="0.004"/>
+<testcase classname="validate PUT /headline" name="should PUT headline for sampleUser" time="0.003"/>
+</testsuite>
