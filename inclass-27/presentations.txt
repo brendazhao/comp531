@@ -1,10 +1,8 @@
 1. Which presentation was the most polished and delivered, and why?
-Cloud Computing and Web service, I think the presenter must have done a lot of research. He can explain the principle with his own 
-easy-understanding words
+Cloud Computing and Web service, I think the presenter must have done a lot of research. He can explain the principle with his own easy-understanding words
 
 2. Which topic did you learn the most from and what did you learn?
-Cassandra presentation gives me a deep impression. I heard about it before, but it is this presentaion let me know more about the 
-data structure and basic operation.
+Cassandra presentation gives me a deep impression. I heard about it before, but it is this presentaion let me know more about the data structure and basic operation.
 
 3. Which talk did you like the best and why?
 Cloud Computing and Web service. He didn't simply repeat the words in the ppt, but gave us an explainatin in a vivid way.
