@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/main/following.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/components/main/</a> following.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">42.86% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">11.11% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40.91% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/22</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 branch</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component, PropTypes } from 'react'
+import { connect } from 'react-redux'
+import { addFollowing, removeFollowing } from './followingActions'
+&nbsp;
+// this is the basic structure for user's info
+const User = <span class="fstat-no" title="function not covered" >({<span class="cstat-no" title="statement not covered" >user, dispatch}) =&gt; {</span></span>
+    return(
+<span class="cstat-no" title="statement not covered" >    &lt;div&gt;</span>
+        &lt;br/&gt;
+        &lt;img src={user.avatar} /&gt;
+        &lt;div&gt;{user.username}&lt;/div&gt;
+        &lt;div&gt;&lt;b&gt;{user.headline}&lt;/b&gt;&lt;/div&gt;
+        &lt;button className='btn' 
+            onClick={<span class="fstat-no" title="function not covered" >() =&gt; <span class="cstat-no" title="statement not covered" >removefollower({dispatch, username: user.username})}&gt;Unfollow&lt;/button&gt; </span></span>
+        &lt;br/&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+    &lt;/div&gt;
+    )
+}
+// this is the class get what we need from the state and 
+//build the basic structure for followers with the info
+const Following = <span class="fstat-no" title="function not covered" >({<span class="cstat-no" title="statement not covered" >errUpdateInfo,followerList, dispatch}) =&gt; {</span></span>
+    return (
+<span class="cstat-no" title="statement not covered" >            &lt;div&gt;</span>
+                &lt;h3&gt; Following Users &lt;/h3&gt;
+                &lt;div&gt;
+                    {
+                        followerList.map(<span class="fstat-no" title="function not covered" >(user,index) =&gt; {</span>
+                            return (
+<span class="cstat-no" title="statement not covered" >                                &lt;User key={index} user={user} dispatch={dispatch}/&gt;</span>
+                            )
+                        })
+                    }
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;input id='addFollowing' type='text' className="inputmsg2" 
+                        placeholder='Name' /&gt;&lt;br/&gt;
+                    &lt;button className='btn' 
+                        onClick={<span class="fstat-no" title="function not covered" >() =&gt; </span>
+<span class="cstat-no" title="statement not covered" >                            addfollower(dispatch)}&gt; Add New Follewer&lt;/button&gt;</span>
+                &lt;/div&gt;
+                 &lt;div className="alertmsg"&gt;{errUpdateInfo}&lt;/div&gt;
+            &lt;/div&gt;
+        )
+}
+// add a follower by changing the state 
+const addfollower = <span class="fstat-no" title="function not covered" >(dispatch) =&gt; {</span>
+    var <span class="cstat-no" title="statement not covered" >name = document.getElementById('addFollowing').value </span>
+    if(<span class="cstat-no" title="statement not covered" >name===''){</span>
+        dispatch(<span class="cstat-no" title="statement not covered" >{type:'IS_UPDATE_ERROR',errUpdateInfo:'Please enter the name!'})</span>
+    }
+    else{
+        dispatch(<span class="cstat-no" title="statement not covered" >{type:'IS_UPDATE_ERROR',errUpdateInfo:''})</span>
+        dispatch(<span class="cstat-no" title="statement not covered" >addFollowing(name))</span>
+        document.<span class="cstat-no" title="statement not covered" >getElementById('addFollowing').value = ''</span>
+    }
+}
+//remove a follower by changing the state 
+const removefollower = <span class="fstat-no" title="function not covered" >({<span class="cstat-no" title="statement not covered" >dispatch,username}) =&gt; {</span></span>
+    dispatch(<span class="cstat-no" title="statement not covered" >removeFollowing(username))</span>
+}
+&nbsp;
+export default connect(
+<span class="fstat-no" title="function not covered" >    (state) =&gt; {</span>
+        return <span class="cstat-no" title="statement not covered" >{</span>
+            errUpdateInfo:state.errUpdateInfo,
+            followerList: state.followerList
+        }
+    }, null)(Following)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 24 2017 21:48:13 GMT-0500 (CDT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

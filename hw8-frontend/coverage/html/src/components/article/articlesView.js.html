@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/article/articlesView.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/components/article/</a> articlesView.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60.71% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>17/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">28.57% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">27.27% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">52.38% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/21</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 statement, 1 branch</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {Component, PropTypes} from 'react'
+import {connect} from 'react-redux'
+&nbsp;
+const articlesInfo = require('../../data/articles.json')
+const articles = articlesInfo.articles
+//the basic sturcture for each piece of article
+const Card = <span class="fstat-no" title="function not covered" >({<span class="cstat-no" title="statement not covered" >article, index, user}) =&gt; (</span></span>
+<span class="cstat-no" title="statement not covered" >    &lt;tbody&gt;</span>
+        &lt;tr&gt;
+            &lt;td className="card3"&gt;
+                &lt;div className="note"&gt;{article.author} said on {article.date}&lt;/div&gt;
+                &lt;div&gt; { article.text } &lt;/div&gt;
+                &lt;br/&gt;
+                &lt;button type='button' className='btn' data-toggle='collapse'
+                        data-target={'#collapseComments' + index}&gt;Comment({article.comments.length})&lt;/button&gt;
+                &lt;button type='button' className='btn' &gt;Edit&lt;/button&gt; 
+                &lt;br/&gt;&lt;br/&gt;
+                 { article.comments.length &gt; 0 ? (
+                &lt;ul className='collapse' id={'collapseComments' + index}&gt;
+                        { article.comments.map(<span class="fstat-no" title="function not covered" >(comment, index) =&gt; {</span>
+                            return (
+<span class="cstat-no" title="statement not covered" >                                &lt;li key={index} className="card4"&gt;</span>
+                                    { comment.author }:  {comment.text}
+                                &lt;/li&gt;
+                            )
+                        })}
+                    &lt;/ul&gt;
+                ) : (
+                null
+            )}
+            &lt;/td&gt;
+            {(article.picture === ""||article.picture===null) ? (
+                &lt;td className="card3"&gt;No img&lt;/td&gt;
+            ) : (
+                &lt;td className="card3"&gt;&lt;img src={article.picture} /&gt;&lt;/td&gt;
+            )}
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+)
+&nbsp;
+// this is the class get what we need from the state and build the basic structure for article with the info
+export const ArticlesView = ({articlesFilt, resumeArticles, filterArticles}) =&gt; (
+            &lt;div&gt;
+                &lt;div className='card3'&gt;
+                    &lt;input id="yourFeed"className="inputmsg" type="text" 
+                            placeholder="search you feed" 
+                            onChange={<span class="fstat-no" title="function not covered" >(event) =&gt; <span class="cstat-no" title="statement not covered" >dosearch(event, resumeArticles, filterArticles)}/&gt;</span></span>
+                &lt;/div&gt;
+                &lt;div className='articlesView'&gt;
+                    &lt;table&gt;
+                        {
+                            articlesFilt.map((article, index, user) =&gt; {
+                                return (
+                                    &lt;Card key={index} article={article} 
+                                          index={index} user={user}/&gt;
+                                )
+                            })
+                        }
+                    &lt;/table&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+)
+&nbsp;
+&nbsp;
+//filter the article according to the input of the user
+const dosearch = <span class="fstat-no" title="function not covered" >(event, resumeArticles, filterArticles) =&gt; {</span>
+    var <span class="cstat-no" title="statement not covered" >keyWord = document.getElementById('yourFeed').value</span>
+    if(<span class="cstat-no" title="statement not covered" >keyWord === ""||keyWord==null) {</span>
+        resumeArticles()
+    } else {
+       filterArticles(<span class="cstat-no" title="statement not covered" >keyWord)</span>
+    }
+    
+}
+export default connect(
+<span class="fstat-no" title="function not covered" >    (state) =&gt; {</span>
+        return <span class="cstat-no" title="statement not covered" >{</span>
+            articlesFilt:state.articlesFilt,
+            user : state.user
+        }
+    },  
+<span class="fstat-no" title="function not covered" >    (dispatch) =&gt; {</span>
+        return <span class="cstat-no" title="statement not covered" >{</span>
+            resumeArticles: <span class="fstat-no" title="function not covered" >() =&gt; <span class="cstat-no" title="statement not covered" >dispatch({type: 'RESUME_ARTICLES'}),</span></span>
+            filterArticles: <span class="fstat-no" title="function not covered" >(keyWord) =&gt; <span class="cstat-no" title="statement not covered" >dispatch({type: 'FILTER_ARTICLES', keyWord: keyWord})</span></span>
+        }
+    }
+)(ArticlesView)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 24 2017 21:48:13 GMT-0500 (CDT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

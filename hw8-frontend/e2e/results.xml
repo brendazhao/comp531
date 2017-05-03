@@ -1,0 +1,20 @@
+
+> starter@1.0.0 e2e:base /Users/qinlan/Documents/comp531/hw6
+> mocha --opts e2e/mocha.opts e2e/*.spec.js "--reporter" "xunit"
+
+<testsuite name="Mocha Tests" tests="14" failures="0" errors="0" skipped="0" timestamp="Thu, 06 Apr 2017 01:30:31 GMT" time="50.229">
+<testcase classname="Test frontend application" name="should register new user" time="6.47"/>
+<testcase classname="Test frontend application" name="should log in as the test user" time="2.942"/>
+<testcase classname="Test frontend application" name="should post a new article" time="3.455"/>
+<testcase classname="Test frontend application" name="should edit an article" time="1.275"/>
+<testcase classname="Test frontend application" name="should update the headline" time="1.278"/>
+<testcase classname="Test frontend application" name="should add a follower" time="4.82"/>
+<testcase classname="Test frontend application" name="should remove a follower" time="2.637"/>
+<testcase classname="Test frontend application" name="should search by keyword" time="12.429"/>
+<testcase classname="Test frontend application" name="should navigate to profile" time="1.652"/>
+<testcase classname="Test frontend application" name="should update profile - email" time="3.501"/>
+<testcase classname="Test frontend application" name="should update profile - zipcode" time="3.355"/>
+<testcase classname="Test frontend application" name="should update profile - password" time="1.443"/>
+<testcase classname="Test frontend application" name="should navigate to Main Page" time="1.119"/>
+<testcase classname="shutdown" name="now" time="0.081"/>
+</testsuite>
