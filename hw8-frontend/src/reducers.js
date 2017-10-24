@@ -12,34 +12,28 @@ const Reducer =(state={
 	articlesFilt: []
 },action)=>{
 	switch (action.type){
-		case 'TO_OUT':{
+		case 'TO_OUT':
 			return {...state,
 					location:"LANDING_PAGE",
 					user:{},
-                    articles:[],
-                    articlesFilt:[],
-                    followerList:[],
-                    errRegInfo:'',
-                    errLogInfo:'',
-                    errUpdateInfo:'',
-                    errProfileInfo:''
-            }
-        }
-		case 'TO_MAIN_PAGE':{
+					articles:[],
+					articlesFilt:[],
+					followerList:[],
+					errRegInfo:'',
+					errLogInfo:'',
+					errUpdateInfo:'',
+					errProfileInfo:''}
+		case 'TO_MAIN_PAGE':
 			return {...state,
 					location:"MAIN_PAGE"}
-        }
-        case 'TO_PROFILE_PAGE': 
+        	case 'TO_PROFILE_PAGE': 
 			return {...state,
 					location:"PROFILE_PAGE",
 					errUpdateInfo:''}
-        case 'CLEAN': {
-                return {
-                    ...state,
-                    followerList: [],
-                    articles: []
-                }
-        }
+        	case 'CLEAN':
+                	return {...state,
+                    			followerList: [],
+                    			articles: []}
 		case 'IS_REG_ERROR':
 			return {...state,
 					errRegInfo: action.errRegInfo}
@@ -49,13 +43,12 @@ const Reducer =(state={
 		case 'IS_UPDATE_ERROR':
 			return {...state,
 					errUpdateInfo:action.errUpdateInfo}
-        case 'IS_PROFILE_ERROR':
+        	case 'IS_PROFILE_ERROR':
 			return {...state,
 					errProfileInfo:action.errProfileInfo}
-        case 'IS_LINK_ERROR':{
+        	case 'IS_LINK_ERROR':
 			return {...state,
 					errLinkInfo:action.errLinkInfo}
-        }
 		case 'UPDATE_HEADLINE':
 			return {...state,
 					user:{
@@ -64,80 +57,61 @@ const Reducer =(state={
 					    headline:action.headline
 					}
 			}
-		case 'UPDATE_ARTICLES': {
-        //    console.log(action.articles)
-            return {
-                ...state,
-                articles: action.articles,
-                articlesFilt: action.articles
-            }
-        }
-        case 'UPDATE_AVATAR': {
-            return {
-                ...state,
-              user:{
+		case 'UPDATE_ARTICLES': 
+            		return {...state,
+                			articles: action.articles,
+                			articlesFilt: action.articles}
+        	case 'UPDATE_AVATAR':
+            		return {...state,
+              				user:{
 						...state.user,
-						avatar:action.avatar
-			}
-        }
-        }
+						avatar:action.avatar}
+        		}
 		case 'REGISTER':
 			return {...state,
 					user: action.user}
 		case 'LOG_IN':  
 			return {...state,
 					user: action.user}
-		case 'ADD_ARTICLE':{
-			 return {
-                ...state,
-                articles: [
-                    ...state.articles,
-                    {
-                        author:'',
-                        text: action.articles.text,
-                        timestamp:'',
-                        picture:action.articles.img
-                    }
-                ]
-            }
-        }
+		case 'ADD_ARTICLE':
+			 return {...state,
+					articles: [...state.articles,
+						{
+							author:'',
+							text: action.articles.text,
+							timestamp:'',
+							picture:action.articles.img
+						}]
+			}
 		case 'ADD_FOLLOWING': 
-            return {
-                ...state,
-                followerList: [ 
-                    ...state.followerList,
-                    action.followerList
-                ]
-        }
-		case 'INIT_PROFILE': {
-            return {
-                ...state,
-                user: {
-                    ...state.user,
-                    email: action.newuser.email,
-                    zipcode: action.newuser.zipcode,
-                    dob: action.newuser.dob,
-                    avatar: action.newuser.avatar
-                }
-            }
-        }
-		case 'RESUME_ARTICLES': {
-            return {
-                ...state,
-                articlesFilt: state.articles
-            }
-        }
-        case 'FILTER_ARTICLES': {
-            return {
-                ...state,
-                articlesFilt: state.articles.filter((article) => {
-                    if(article.author.indexOf(action.keyWord) == -1 && article.text.indexOf(action.keyWord) == -1) {
-                        return false;
-                    }
-                    return true;
-                })
-            }
-        }
+			return {...state,
+					followerList: [ 
+					    ...state.followerList,
+					    action.followerList]
+			}
+		case 'INIT_PROFILE':
+            		return {...state,
+                			user: {
+					    ...state.user,
+					    email: action.newuser.email,
+					    zipcode: action.newuser.zipcode,
+					    dob: action.newuser.dob,
+					    avatar: action.newuser.avatar
+					}
+			}
+		case 'RESUME_ARTICLES':
+			return {...state,
+					articlesFilt: state.articles}
+        	case 'FILTER_ARTICLES':
+            		return {
+				...state,
+				articlesFilt: state.articles.filter((article) => {
+				    if(article.author.indexOf(action.keyWord) == -1 && article.text.indexOf(action.keyWord) == -1) {
+					return false;
+				    }
+				    return true;
+				})
+            		}
 		default:
 			return state
 	}
